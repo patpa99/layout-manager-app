@@ -1,0 +1,69 @@
+#addNewAppsDiv {
+  margin-top: 30px;
+}
+
+#addNewPagesP,
+#addNewAppsP {
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+}
+
+#inputNewPage,
+#inputNewAppName,
+#inputNewAppPath {
+  height: 30px;
+  width: 80%;
+  max-width: 250px;
+  margin: 8px;
+  font-size: 17px;
+  background-color: #e6e6e6;
+}
+
+#sidebarSecNewPage,
+#sidebarNewPage {
+  height: 35.2px;
+  width: 80%;
+  max-width: 250px;
+  margin: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: #e6e6e6;
+}
+
+#buttonNewPage,
+#buttonNewApp {
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  margin-bottom: -11px;
+  padding: 2px;
+}
+
+#loadingDiv {
+  margin: 20px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+/* Media query to change step1 component style when window width is less than 851px */
+@media screen and (max-width: 851px) {
+  #addNewPagesP,
+  #addNewAppsP {
+    font-size: 21px;
+  }
+
+  #inputNewPage,
+  #inputNewAppName,
+  #inputNewAppPath,
+  #sidebarSecNewPage,
+  #sidebarNewPage,
+  #sidebarSecNewPage,
+  #sidebarNewPage {
+    font-size: 15px;
+  }
+
+  #loadingDiv {
+    font-size: 17px;
+  }
+}

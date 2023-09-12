@@ -1,0 +1,43 @@
+#selectPageExternalDiv {
+  font-size: 17px;
+}
+
+#selectPageP {
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+}
+
+#selectPageDiv {
+  width: 80%;
+  margin: auto;
+}
+
+#selectPageDiv div {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+}
+
+#selectPageDiv div:hover {
+  cursor: pointer;
+  background-color: #737373;
+}
+
+#selectPageDiv span {
+  float: left;
+  padding: 5px;
+}
+
+#selectPageDiv img {
+  float: right;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+}
+
+/* Media query to change step2 component style when window width is less than 851px */
+@media screen and (max-width: 851px) {
+  #selectPageExternalDiv {
+    font-size: 15px;
+  }
+}

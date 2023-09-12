@@ -1,0 +1,15 @@
+{
+  "getPagesList": "http://localhost:3000/pages/getPagesList",
+  "getPageLayout": "http://localhost:3000/pages/getPageLayout",
+  "getLayoutImgList": "http://localhost:3000/layouts/getLayoutImagesList",
+  "getAppsList": "http://localhost:3000/apps/getAppsList",
+  "insertNewApp": "http://localhost:3000/apps/insertNewApp",
+  "getLayoutJson": "http://localhost:3000/layouts/getLayoutJson",
+  "getAppsInAPage": "http://localhost:3000/appsInPages/getAppsInAPage",
+  "deleteAppsInAPage": "http://localhost:3000/appsInPages/deleteAppsInAPage",
+  "insertAppsInAPage": "http://localhost:3000/appsInPages/insertAppsInAPage",
+  "updatePageLayout": "http://localhost:3000/pages/updatePageLayout",
+  "deleteAPage": "http://localhost:3000/pages/deleteAPage",
+  "insertNewPage": "http://localhost:3000/pages/insertNewPage",
+  "getSidebarSectionsList": "http://localhost:3000/sidebarSections/getSidebarSectionsList"
+}

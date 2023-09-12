@@ -1,0 +1,105 @@
+/* ---------------- To have the same Roboto font everywhere ------------------ */
+@font-face {
+  font-family: 'Roboto';
+  src: url(file-loader!../assets/fonts/Roboto.ttf);
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* ------------- Body Scrollbar ------------------ */
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #1a1a1a;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+#layoutManagerDiv {
+  min-height: 100%;
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  font-size: 17px;
+  overflow: hidden;
+  text-align: center;
+
+  /* To remove the possibility to highlight text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#layoutManagerTitle {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+#stepsDiv {
+  padding: 40px 20px 20px 20px;
+
+  /* To remove the possibility to highlight text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#prevButton,
+#nextButton {
+  font-size: 15px;
+  width: 80px;
+  background-color: #80ccff;
+  color: black;
+  border-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 30px 10px 10px 10px;
+  cursor: pointer;
+}
+
+#prevButtonDisabled,
+#nextButtonDisabled {
+  font-size: 15px;
+  width: 80px;
+  background-color: #b3e0ff;
+  color: white;
+  border-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 30px 10px 10px 10px;
+}
+
+/* Media query to change layout-manager app style when window width is less than 851px */
+@media screen and (max-width: 851px) {
+  #layoutManagerDiv {
+    font-size: 15px;
+  }
+
+  #layoutManagerTitle {
+    font-size: 25px;
+  }
+
+  #prevButton,
+  #nextButton,
+  #prevButtonDisabled,
+  #nextButtonDisabled {
+    padding: 5px;
+  }
+}

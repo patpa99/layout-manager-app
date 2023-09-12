@@ -1,0 +1,92 @@
+#changeLayoutPageP {
+  font-size: 25px;
+  margin: 0px 0px 10px 0px;
+}
+
+#layoutDiv {
+  font-size: 17px;
+  margin: auto;
+  width: 80%;
+  display: flex;
+}
+
+#layoutImageDiv {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#layoutImageDiv div {
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#layoutImageDiv div:hover {
+  background-color: #666666;
+}
+
+#layoutImageDiv div img {
+  border: 2px solid white;
+  width: 50%;
+  height: auto;
+}
+
+#layoutAppsDiv {
+  flex: 1;
+  text-align: center;
+}
+
+#layoutAppsDiv select {
+  font-size: 17px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+/* ------------- Apply Changes Step3 Component Button ------------- */
+#applyChangesLayoutButton {
+  font-size: 15px;
+  background-color: #80ccff;
+  color: black;
+  border-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+
+  /* To remove the possibility to highlight text */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#applyChangesLayoutButton:hover {
+  cursor: pointer;
+}
+
+#loadingDiv {
+  margin: 20px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+/* Media query to change step3 component style when window width is less than 851px */
+@media screen and (max-width: 851px) {
+  #changeLayoutPageP {
+    font-size: 21px;
+  }
+
+  #layoutAppsDiv select {
+    font-size: 15px;
+  }
+
+  #applyChangesLayoutButton {
+    padding: 5px;
+  }
+
+  #loadingDiv {
+    font-size: 17px;
+  }
+}
